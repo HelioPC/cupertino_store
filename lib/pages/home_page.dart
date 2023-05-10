@@ -1,3 +1,6 @@
+import 'package:cupertino_store/pages/tabs/cart_tab.dart';
+import 'package:cupertino_store/pages/tabs/product_list_tab.dart';
+import 'package:cupertino_store/pages/tabs/search_tab.dart';
 import 'package:flutter/cupertino.dart';
 
 class CupertinoStoreHomePage extends StatelessWidget {
@@ -30,7 +33,7 @@ class CupertinoStoreHomePage extends StatelessWidget {
             tabView = CupertinoTabView(
               builder: (context) {
                 return const CupertinoPageScaffold(
-                  child: Center(),
+                  child: ProductListTab(),
                 );
               },
             );
@@ -39,7 +42,7 @@ class CupertinoStoreHomePage extends StatelessWidget {
             tabView = CupertinoTabView(
               builder: (context) {
                 return const CupertinoPageScaffold(
-                  child: Center(),
+                  child: SearchTab(),
                 );
               },
             );
@@ -48,7 +51,7 @@ class CupertinoStoreHomePage extends StatelessWidget {
             tabView = CupertinoTabView(
               builder: (context) {
                 return const CupertinoPageScaffold(
-                  child: Center(),
+                  child: CartTab(),
                 );
               },
             );
